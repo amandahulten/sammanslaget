@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
     <link rel="stylesheet" href="/src/styles/main.css" />
     <title>Startpage</title>
   </head>
@@ -11,15 +13,43 @@
     <header>
       <nav>
         <img
-          src="/assets/images/logo.svg"
+          src="/assets/images/logo-mobile.svg"
           alt="Björk och frihets logga"
           class="logo-mobile"
+        />
+        <img
+          src="/assets/images/logo-desktop.svg"
+          alt="Björk och frihets logga"
+          class="logo-desktop"
         />
         <a href="/src/about.html" class="nav-link">Om oss</a>
       </nav>
     </header>
-    <main></main>
-
-    <script src="/assets/scripts/app.js"></script>
+    <main>
+      <div class="game-message">
+        <p>
+          Vanligtvis brukar det vara ett spel här - men det är tyvärr inte
+          kompatibelt på mobil eller tablet. <br />
+          <br />
+          Besök oss på en dator för att spela, eller varför inte
+          <a href="/src/about.html">lära känna oss</a>
+          först!
+        </p>
+      </div>
+      <div id="unity-container" class="unity-desktop">
+        <h1>Small Actions Add Up</h1>
+        <canvas id="unity-canvas" width="960" height="600"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-footer">
+          <div id="unity-fullscreen-button"></div>
+        </div>
+      </div>
+    </main>
+    <script src="/src/scripts/app.js"></script>
   </body>
 </html>

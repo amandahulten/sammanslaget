@@ -1,7 +1,60 @@
+:root {
+  --background: #f0e7e3;
+  --primary-text: #241e31;
+  --brown: #783631;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: #f7f6dc;
+  background-color: var(--background);
+}
+
+@font-face {
+  font-family: "Nunito Light";
+  src: url("../../assets/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+  font-family: "Nunito Regular";
+  src: url("../../assets/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito SemiBold";
+  src: url("../../assets/fonts/Nunito-SemiBold.ttf");
+}
+
+h1,
+p {
+  font-family: "Nunito Regular";
+}
+
+.game-message {
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.game-message p {
+  font-size: 24px;
+  color: var(--primary-text);
+}
+
+.game-message a {
+  color: var(--primary-text);
+}
+
+#unity-container {
+  display: none;
+}
+
+#unity-container h1 {
+  color: #241e31;
+  margin-bottom: 10px;
+}
+
+#unity-fullscreen-button {
+  cursor: pointer;
 }
 
 nav {
@@ -9,27 +62,72 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px;
+  height: 80px;
+  padding: 20px;
+  border-bottom: 1px solid var(--primary-text);
 }
 
-.logo {
-  width: 275px;
-  height: 35px;
+.logo-desktop {
+  display: none;
 }
 
 .nav-link {
   text-decoration: none;
-  font-size: 34px;
-  color: black;
+  font-size: 24px;
+  color: var(--primary-text);
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--primary-text);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-link {
+    font-size: 28px;
+  }
+
+  .game-message {
+    text-align: center;
+    padding: 40px 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    padding-right: 50px;
+  }
+
+  .game-message {
+    display: none;
+  }
+
+  #unity-container {
+    display: none;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unity-desktop {
+    width: 700px;
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  .logo {
-    width: 328px;
-    height: 50px;
+  nav {
+    height: 130px;
+  }
+  .nav-link {
+    font-size: 40px;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
   }
 }
