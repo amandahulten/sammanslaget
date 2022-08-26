@@ -204,6 +204,10 @@ p {
     height: 30px;
   }
 
+  .education-link img:hover {
+    transform: scale(1.2);
+  }
+
   .back-button {
     display: flex;
     align-items: center;
