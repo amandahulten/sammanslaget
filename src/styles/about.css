@@ -130,12 +130,15 @@ h3 {
 }
 
 p {
-  padding: 0 20px;
   font-family: "Nunito Light";
   font-size: 16px;
   line-height: 25px;
   font-weight: 300;
   color: var(--primary-text);
+}
+
+.profile-info p {
+  padding: 0 20px;
 }
 
 .profile-img {
@@ -168,7 +171,7 @@ p {
     gap: 15px;
   }
 
-  .p {
+  .profile-info p {
     padding: 0;
   }
 }
