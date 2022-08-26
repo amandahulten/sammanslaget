@@ -1,5 +1,5 @@
 :root {
-  --background: #f0e7e3;
+  --background: #f7f2f0;
   --primary-text: #241e31;
   --brown: #783631;
 }
@@ -25,10 +25,15 @@
   src: url("../../assets/fonts/Nunito-SemiBold.ttf");
 }
 
-h1,
 p,
 a {
   font-family: "Nunito Regular";
+}
+
+h1 {
+  font-family: "Nunito Light";
+  font-weight: 400;
+  font-size: 28px;
 }
 
 .game-message {
@@ -68,10 +73,6 @@ nav {
   border-bottom: 1px solid var(--primary-text);
 }
 
-.logo-desktop {
-  display: none;
-}
-
 .nav-link {
   text-decoration: none;
   font-size: 24px;
@@ -83,8 +84,12 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
   .nav-link {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .game-message {
@@ -96,6 +101,11 @@ nav {
 @media screen and (min-width: 1024px) {
   nav {
     padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  h1 {
+    font-size: 36px;
   }
 
   .game-message {
@@ -112,21 +122,13 @@ nav {
 
 @media screen and (min-width: 1440px) {
   nav {
-    height: 130px;
+    height: 110px;
   }
   .nav-link {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   h1 {
-    font-size: 40px;
-  }
-
-  .logo-desktop {
-    display: block;
-  }
-
-  .logo-mobile {
-    display: none;
+    font-size: 36px;
   }
 }

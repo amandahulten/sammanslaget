@@ -1,5 +1,5 @@
 :root {
-  --background: #f0e7e3;
+  --background: #f7f2f0;
   --primary-text: #241e31;
   --brown: #783631;
 }
@@ -43,12 +43,12 @@ nav {
   font-family: "Nunito Regular";
 }
 
-main {
-  margin: 20px 20px 30px 20px;
+.title {
+  font-size: 28px;
 }
 
-.logo-desktop {
-  display: none;
+main {
+  margin: 20px 20px 30px 20px;
 }
 
 .title-wrapper {
@@ -157,8 +157,8 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-link {
-    font-size: 28px;
+  .title {
+    font-size: 32px;
   }
   .single-profile {
     width: 250px;
@@ -179,6 +179,7 @@ p {
   }
   nav {
     padding-right: 50px;
+    padding-left: 50px;
   }
 
   .profile-wrapper {
@@ -227,6 +228,10 @@ p {
     border-bottom: 2px solid var(--primary-text);
   }
 
+  .title {
+    font-size: 36px;
+  }
+
   h1 {
     font-size: 32px;
   }
@@ -263,18 +268,12 @@ p {
 
 @media screen and (min-width: 1440px) {
   nav {
-    height: 130px;
+    height: 110px;
   }
   .nav-link {
-    font-size: 40px;
-  }
-  .logo-mobile {
-    display: none;
+    font-size: 32px;
   }
 
-  .logo-desktop {
-    display: block;
-  }
   h1 {
     font-size: 40px;
     margin-bottom: 80px;
