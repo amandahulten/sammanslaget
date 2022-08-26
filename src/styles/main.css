@@ -117,6 +117,10 @@ nav {
     font-size: 40px;
   }
 
+  h1 {
+    font-size: 36px;
+  }
+
   .logo-desktop {
     display: block;
   }
